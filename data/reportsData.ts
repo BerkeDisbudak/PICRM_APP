@@ -1,0 +1,142 @@
+export const reports = [
+  {
+    id: 'report-001',
+    title: '3. Çeyrek Gelir Tahmin Analizi',
+    summary: 'Mevcut büyüme eğilimleri ve mevsimsel kalıplara dayanarak, 3. çeyrek için yıllık bazda %12 gelir artışı öngörüyoruz. Temel etkenler arasında yeni ürün lansmanları ve genişleyen pazar erişimi yer alıyor.',
+    date: '12 Haziran 2025',
+    riskLevel: 'low' as const,
+    confidence: 87,
+    sentiment: 78,
+    tags: ['Gelir', 'Büyüme', 'Tahmin', 'Q3', 'Ürün Lansmanı'],
+    findings: [
+      {
+        title: 'Ürün Grubu Performansı',
+        description: 'Premium ürün grubu %23 büyürken, standart grup %15 büyüdü. Bu, premium ürün tekliflerinin genişletilmesi için fırsat sunuyor.',
+        trend: 'up' as const,
+      },
+      {
+        title: 'Pazar Genişleme Etkisi',
+        description: 'Avrupa pazarına giriş, yeni büyümenin %8’ine katkıda bulundu. Yatırım getirisi, ilk tahminleri %12 oranında aştı.',
+        trend: 'up' as const,
+      },
+      {
+        title: 'Mevsimsel Düzeltme',
+        description: '3. çeyrek, tarihsel olarak yıllık ortalamanın %4 üzerinde büyüme gösteriyor. Mevcut tahmin bu kalıbı dikkate alıyor.',
+        trend: 'up' as const,
+      },
+    ],
+    notes: 'Bu tahmin, ekonomik koşulların istikrarlı kalması ve büyük tedarik zinciri kesintilerinin yaşanmaması varsayımına dayanır. Güven skoru, güçlü tarihsel veri korelasyonu ve pazar istikrarı göstergelerini yansıtmaktadır.',
+  },
+  {
+    id: 'report-002',
+    title: 'Müşteri Edinme Maliyeti Analizi',
+    summary: 'CAC, çeyrekten çeyreğe %18 arttı; artışın büyük kısmı sosyal medya kanallarında gerçekleşti. Dönüşüm oranları sabit kaldı, bu da rekabet baskısına işaret ediyor; kampanya etkinliğiyle ilgili bir sorun görünmüyor.',
+    date: '10 Haziran 2025',
+    riskLevel: 'medium' as const,
+    confidence: 76,
+    sentiment: 42,
+    tags: ['CAC', 'Pazarlama', 'Reklam', 'Sosyal Medya', 'Yatırım Getirisi'],
+    findings: [
+      {
+        title: 'Kanal Maliyeti Enflasyonu',
+        description: 'Sosyal medya CPM’si %24, arama reklamları %12 arttı. Daha küçük platformlar daha yüksek verimlilik gösteriyor.',
+        trend: 'down' as const,
+      },
+      {
+        title: 'Dönüşüm Oranı İstikrarı',
+        description: 'Yüksek maliyetlere rağmen dönüşüm oranları, önceki çeyrek ortalamalarının %2 içinde kaldı.',
+        trend: 'up' as const,
+      },
+      {
+        title: 'Rekabet Faaliyetleri',
+        description: 'Üç büyük rakip, aynı dönemde reklam harcamalarını tahmini %30–45 oranında artırdı.',
+        trend: 'down' as const,
+      },
+    ],
+    notes: 'Alternatif kanalların test edilmesi ve hedefleme parametrelerinin gözden geçirilmesi önerilir. Yeni platformlar daha iyi YG potansiyeli taşıyor. Farklılaştırıcı unsurlara odaklı mesajlaşmanın test edilmesi değerlendirilmeli.',
+  },
+  {
+    id: 'report-003',
+    title: 'Tedarik Zinciri Kesintisi Risk Değerlendirmesi',
+    summary: 'Asya’daki üreticilerden bileşen tedarikinde 45 gün içinde yüksek olasılıkla bir kesinti bekleniyor. Bu durum 3. çeyrek ürün lansmanlarının üretim takvimini etkileyebilir.',
+    date: '8 Haziran 2025',
+    riskLevel: 'high' as const,
+    confidence: 83,
+    sentiment: 24,
+    tags: ['Tedarik Zinciri', 'Üretim', 'Risk', 'Bileşenler', 'Üretim Takvimi'],
+    findings: [
+      {
+        title: 'Tedarikçi Fabrika Kapasitesi',
+        description: 'Birincil tedarikçi yerel kısıtlamalar nedeniyle %62 kapasiteyle çalışıyor; geçen ay bu oran %85’ti.',
+        trend: 'down' as const,
+      },
+      {
+        title: 'Nakliye Lojistiği',
+        description: 'Ortalama nakliye süresi %40 arttı ve yüksek değişkenlik gösteriyor. Liman tıkanıklığı son 12 ayın en yüksek seviyesinde.',
+        trend: 'down' as const,
+      },
+      {
+        title: 'Stok Projeksiyonu',
+        description: 'Mevcut bileşen stoku, planlanan üretim hızında 38 gün yeterli.',
+        trend: 'down' as const,
+      },
+    ],
+    notes: 'Acil aksiyon önerilir. Alternatif tedarikçilerin değerlendirilmesi, kritik bileşenler için hava taşımacılığı ya da üretim takviminin ayarlanması seçenekler arasında. Finansal etki analizi ek raporda mevcut.',
+  },
+  {
+    id: 'report-004',
+    title: 'Yeni Pazar Fırsatı Tespiti',
+    summary: 'Pazar trendleri ve rakip hareketlerinin analizi, kurumsal güvenlik yazılımlarında ortaya çıkan bir fırsatı gösteriyor. Tahmini toplam adreslenebilir pazar (TAM): 2.8 milyar dolar, yıllık büyüme oranı %22.',
+    date: '5 Haziran 2025',
+    riskLevel: 'low' as const,
+    confidence: 68,
+    sentiment: 82,
+    tags: ['Pazar Fırsatı', 'Kurumsal', 'Güvenlik', 'Büyüme', 'TAM'],
+    findings: [
+      {
+        title: 'Arama Hacmi Trendleri',
+        description: 'İlgili arama terimleri yıllık bazda %34 arttı; son 60 günde artış hızlandı.',
+        trend: 'up' as const,
+      },
+      {
+        title: 'Rekabet Ortamı',
+        description: 'Pazar dağınık; hiçbir oyuncu %12’nin üzerinde paya sahip değil. İki yeni satın alma, konsolidasyon sinyali veriyor.',
+        trend: 'up' as const,
+      },
+      {
+        title: 'Regülasyon Etkenleri',
+        description: 'AB ve ABD’de yeni uyum gereklilikleri, kurumsal çözümlere olan ihtiyacı artırıyor.',
+        trend: 'up' as const,
+      },
+    ],
+    notes: 'Orta düzey güven skoru, fırsatın henüz olgunlaşmamış doğasından kaynaklanıyor. Teknik gereksinimlerin ve pazara giriş stratejisinin derinlemesine analizi önerilir. Organik gelişim veya satın alma yoluyla ilerleme potansiyeli var.',
+  },
+  {
+    id: 'report-005',
+    title: 'Müşteri Tutundurma Riski Analizi',
+    summary: 'Erken uyarı sinyalleri, önümüzdeki çeyrekte churn oranında artış olabileceğini gösteriyor. Kurumsal segmentteki davranışsal sinyaller, riskli hesaplarda %28 artış olduğunu ortaya koyuyor.',
+    date: '2 Haziran 2025',
+    riskLevel: 'medium' as const,
+    confidence: 72,
+    sentiment: 35,
+    tags: ['Tutundurma', 'Churn', 'Müşteri Başarısı', 'Kurumsal', 'Risk'],
+    findings: [
+      {
+        title: 'Kullanım Alışkanlıklarındaki Değişim',
+        description: 'Kurumsal hesaplarda yönetici paneli kullanımı %15 azaldı. Özellik kullanım oranı hesapların %32’sinde düşüşte.',
+        trend: 'down' as const,
+      },
+      {
+        title: 'Destek Etkileşimleri',
+        description: 'Teknik destek talepleri %23 arttı, yönlendirme oranı yükseldi. Memnuniyet puanları sabit kaldı.',
+        trend: 'down' as const,
+      },
+      {
+        title: 'Rakiplerle Etkileşim',
+        description: 'Müşteri kitlesi içinde rakip içeriklerle sosyal etkileşim %40 arttı.',
+        trend: 'down' as const,
+      },
+    ],
+    notes: 'Risk altındaki hesaplar için hedefli bir etkileşim kampanyası önerilir. Müşteri başarı ekibi, çoklu risk sinyali gösteren yüksek değerli hesaplara öncelik vermeli. Özellik eğitimi ve iş değeri inceleme oturumları tavsiye edilir.',
+  },
+];

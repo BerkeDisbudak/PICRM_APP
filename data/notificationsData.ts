@@ -1,0 +1,42 @@
+export const notifications = [
+  {
+    id: 'notif-001',
+    title: 'Yüksek Risk Uyarısı: Tedarik Zinciri Kesintisi',
+    message: 'Asya\'dan gelen bileşen tedarikinde potansiyel kesinti tespit edildi. 45 gün içinde üretimi etkileme olasılığı %60.',
+    timestamp: '10 dk önce',
+    type: 'alert',
+    read: false,
+  },
+  {
+    id: 'notif-002',
+    title: 'Yeni Yapay Zeka İçgörüsü: Pazar Fırsatı',
+    message: 'Arama eğilimleri ve rakip hareketlerinin analizi, kurumsal güvenlik yazılımı segmentinde yeni bir fırsat ortaya koyuyor.',
+    timestamp: '2 saat önce',
+    type: 'insight',
+    read: false,
+  },
+  {
+    id: 'notif-003',
+    title: 'Olumlu Trend: Q3 Gelir Tahmini',
+    message: 'Mevcut metriklere göre, Q3 gelirinin hedefleri %12 aşması öngörülüyor. Ana etkenler yeni ürün adaptasyonu ve artan müşteri sadakati.',
+    timestamp: 'Dün',
+    type: 'trend-up',
+    read: true,
+  },
+  {
+    id: 'notif-004',
+    title: 'Olumsuz Trend: Müşteri Edinme Maliyetleri',
+    message: 'Müşteri edinme maliyeti son çeyrekte %18 arttı, başlıca sebep dijital reklam kanallarındaki artan rekabet.',
+    timestamp: '10 Haz',
+    type: 'trend-down',
+    read: true,
+  },
+  {
+    id: 'notif-005',
+    title: 'Yeni Rapor Mevcut: Müşteri Sadakati Analizi',
+    message: 'Yapay zeka tarafından oluşturulan yeni müşteri kaybı risk faktörleri raporu hazır. Analiz, potansiyel müşteri kaybının temel davranışsal göstergelerini belirliyor.',
+    timestamp: '8 Haz',
+    type: 'insight',
+    read: true,
+  },
+];

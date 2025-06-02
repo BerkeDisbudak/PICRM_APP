@@ -1,0 +1,1 @@
+// This file is now empty as profile functionality has been moved to settings
